@@ -1,0 +1,1133 @@
+{
+    "version": "1.1.0",
+    "description": "Словарь немецких префиксов с поддержкой автодополнения состава (expansions)",
+    "matchStrategy": "longest_first",
+    "prefixes": [
+        {
+            "prefix": "Wasser",
+            "category": "water",
+            "keywords": [ "вода", "wasser" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Milch_das_Ei_Eier_egg",
+            "category": "dairy_eggs",
+            "keywords": [ "яйцо", "яйца", "перепел", "д.п.яйцо", "деревенское" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Milch",
+            "category": "dairy",
+            "keywords": [ "молоко", "сливки", "деревенское питьевое" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Fermentierte_Milchprodukte",
+            "category": "fermented_dairy",
+            "keywords": [ "кефир", "сметана", "творог", "ряженк", "варенец", "сюзьма", "халалмилк" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Fermentierte_Milchprodukte_Kefir",
+            "category": "kefir",
+            "keywords": [ "кисломолочный_кефир", "талицкий кефир" ],
+            "regex": "кефир.*талицкий|талицкий.*кефир",
+            "expansions": null,
+            "priority": 12
+        },
+        {
+            "prefix": "Fermentierte_Milchprodukte_Joghurt",
+            "category": "yogurt",
+            "keywords": [ "йогурт", "биолакт", "теос", "эпика", "савушкин", "из талицы", "актимуно", "exponenta" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Käse",
+            "category": "cheese",
+            "keywords": [ "сыр", "моцарелла", "камамбер", "бри", "пармезан", "грюйер", "манчего", "гойя", "dürr classic", "эконива", "липин бор" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Ziegenkäse",
+            "category": "goat_cheese",
+            "keywords": [ "козий", "бюш", "лангр", "леваpден", "chevre", "excelsior" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Roggenbrot",
+            "category": "bread",
+            "keywords": [ "хлеб", "хлебцы", "батон", "крисп", "пумперникель", "самарский пекарь", "rostok", "смак", "sport" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Schokolade",
+            "category": "chocolate",
+            "keywords": [ "шоколад", "шокол", "lindt", "zaini", "ritter sport" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Gebäck",
+            "category": "bakery",
+            "keywords": [ "печенье", "батончик", "пастилки", "круассан", "7days", "фрутоняня", "юбилейное", "любятово", "honey kid" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Nüsse",
+            "category": "nuts",
+            "keywords": [ "орех", "орехи", "фундук", "грецкий", "фисташ", "миндаль", "кедр", "кедров", "пекан" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 5
+        },
+        {
+            "prefix": "Nüsse_die_Haselnuss_Haselnüsse_hazelnut",
+            "category": "nuts_hazelnut",
+            "keywords": [ "фундук" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Nüsse_die_Walnuss_Walnüsse_walnut",
+            "category": "nuts_walnut",
+            "keywords": [ "грецкий" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Nüsse_die_Pistazie_Pistazien",
+            "category": "nuts_pistachio",
+            "keywords": [ "фисташ" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Nüsse_die_Mandel_Mandeln_almond",
+            "category": "nuts_almond",
+            "keywords": [ "миндаль" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Nüsse_der_Pinienkern_Pinienkerne",
+            "category": "nuts_pine",
+            "keywords": [ "кедр", "кедров", "кедровый" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "ОРЕХИ_ПЕКАН",
+            "category": "nuts_pecan",
+            "keywords": [ "пекан" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Saat_Sesam",
+            "category": "seeds_sesame",
+            "keywords": [ "кунжут" ],
+            "regex": "семена?\\s*кунжут",
+            "expansions": null,
+            "priority": 15
+        },
+        {
+            "prefix": "Saat_Kürbiskerne_pumpkin",
+            "category": "seeds_pumpkin",
+            "keywords": [ "тыквенн" ],
+            "regex": "семена?\\s*тыкв",
+            "expansions": null,
+            "priority": 15
+        },
+        {
+            "prefix": "Saat_Sonnenblume_sunflower",
+            "category": "seeds_sunflower",
+            "keywords": [ "подсолнечник" ],
+            "regex": "семена?\\s*подсолн",
+            "expansions": null,
+            "priority": 15
+        },
+        {
+            "prefix": "Nüsse_der_Hanfsamen_Hanfsamen",
+            "category": "seeds_hemp",
+            "keywords": [ "конопл" ],
+            "regex": "семена?\\s*конопл",
+            "expansions": null,
+            "priority": 15
+        },
+        {
+            "prefix": "Saat_Leinsamen",
+            "category": "seeds_flax",
+            "keywords": [ "льн" ],
+            "regex": "семена?\\s*льн",
+            "expansions": null,
+            "priority": 15
+        },
+        {
+            "prefix": "Fleische_das_Rindfleisch_Rindfleische",
+            "category": "meat_beef",
+            "keywords": [ "говядин", "телятин" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 12
+        },
+        {
+            "prefix": "Fleische_die_Pute_Puten",
+            "category": "meat_turkey",
+            "keywords": [ "индейк" ],
+            "regex": null,
+            "expansions": {
+                "индейк": "МЯСО_ИНДЕЙКА"
+            },
+            "priority": 12
+        },
+        {
+            "prefix": "Fleische_das_Huhn",
+            "category": "meat_chicken",
+            "keywords": [ "куриц", "цыплен" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 12
+        },
+        {
+            "prefix": "МЯСО_КРОЛИК",
+            "category": "meat_rabbit",
+            "keywords": [ "кролик" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 12
+        },
+        {
+            "prefix": "МЯСО_КУРИЦА_СЕРДЕЧКИ",
+            "category": "meat_chicken_hearts",
+            "keywords": [ "сердечк" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 12
+        },
+        {
+            "prefix": "Hühnerleber",
+            "category": "meat_liver",
+            "keywords": [ "печень" ],
+            "regex": "(?!треск)печень",
+            "expansions": null,
+            "priority": 12
+        },
+        {
+            "prefix": "Fleische",
+            "category": "meat_general",
+            "keywords": [ "фарш", "фрикадельк" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 3
+        },
+        {
+            "prefix": "Fische_der_Lachs_Lachse",
+            "category": "fish_salmon",
+            "keywords": [ "семг", "лосос" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Fische_die_Forelle_Forellen",
+            "category": "fish_trout",
+            "keywords": [ "форел" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Fische_die_Makrele_Makrelen_mackerel",
+            "category": "fish_mackerel",
+            "keywords": [ "скумбр" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Fische_der_Dorsch_Dorsche",
+            "category": "fish_cod",
+            "keywords": [ "треск" ],
+            "regex": "(?!печень|икра)треск",
+            "expansions": null,
+            "priority": 8
+        },
+        {
+            "prefix": "Fische_der_Thunfisch_Thunfische",
+            "category": "fish_tuna",
+            "keywords": [ "тунец" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "РЫБА_ПИКША",
+            "category": "fish_haddock",
+            "keywords": [ "пикш" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "РЫБА_ГОРБУША",
+            "category": "fish_pink_salmon",
+            "keywords": [ "горбуш" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "МОРЕПРОДУКТЫ_КРИЛЬ",
+            "category": "seafood_krill",
+            "keywords": [ "криль" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Gemüse_die_Möhre_Möhren_carrot",
+            "category": "veg_carrot",
+            "keywords": [ "морковь" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Gemüse_die_Kartoffel_Kartoffeln_potato",
+            "category": "veg_potato",
+            "keywords": [ "картофел", "батат" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Gemüse_der_Weisskohl_Weißkohle_white_cabbage",
+            "category": "veg_cabbage_white",
+            "keywords": [ "капуст" ],
+            "regex": "капуст(?!\\s*краснокоч|\\s*пекинск|\\s*кейл|\\s*брокол)",
+            "expansions": null,
+            "priority": 7
+        },
+        {
+            "prefix": "Gemüse_das_Blaukraut_Blaukräuter",
+            "category": "veg_cabbage_red",
+            "keywords": [ "краснокочан", "красная капуст" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "ОВОЩИ_КАПУСТА_ПЕКИНСКАЯ_КИТАЙСКАЯ",
+            "category": "veg_cabbage_peking",
+            "keywords": [ "пекинск", "китайск" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Gemüse_die_rote_Rübe_Rüben_beet",
+            "category": "veg_beet",
+            "keywords": [ "свёкл", "свекл" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Gemüse_der_bulgarische_rote_Pfeffer",
+            "category": "veg_pepper_sweet",
+            "keywords": [ "палермо", "рамиро", "болгарский", "сладкий" ],
+            "regex": "перец\\s*(рам|пал|сладк|болгар|ассорт)",
+            "expansions": null,
+            "priority": 12
+        },
+        {
+            "prefix": "Gemüse_der_grüne_Pfeffer",
+            "category": "veg_pepper_green",
+            "keywords": [ "ласточк" ],
+            "regex": "перец\\s*ласточк",
+            "expansions": null,
+            "priority": 12
+        },
+        {
+            "prefix": "Gemüse_der_gemahlene_Pfeffer_ground_pepper",
+            "category": "spice_pepper_ground",
+            "keywords": [ "перец молот" ],
+            "regex": "перец\\s*молот",
+            "expansions": null,
+            "priority": 12
+        },
+        {
+            "prefix": "eingemachte Gemüse_die_Gurke_Gurken_cucumber",
+            "category": "veg_cucumber_pickled",
+            "keywords": [ "огур" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Gemüse_die_Tomate_Tomaten_tomato",
+            "category": "veg_tomato",
+            "keywords": [ "помидор", "томат" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Gemüse_die_Aubergine_Auberginen_aubergine",
+            "category": "veg_eggplant",
+            "keywords": [ "баклажан" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Gemüse_der_Walzenkürbis_Walzenkürbisse",
+            "category": "veg_zucchini",
+            "keywords": [ "кабач" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Gemüse_der_Kürbis_Kürbisse_pumpkin",
+            "category": "veg_pumpkin",
+            "keywords": [ "тыква", "баттернат" ],
+            "regex": "тыква(?!\\s*сем)",
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Gemüse_die_Bohne_Bohnen",
+            "category": "veg_beans",
+            "keywords": [ "фасоль", "пиканта" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Grütze_die_Erbse_Erbsen",
+            "category": "veg_peas",
+            "keywords": [ "горох", "горош" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Gemüse_die_Zwiebel_Zwiebeln_onion",
+            "category": "veg_onion",
+            "keywords": [ "лук", "репчатый" ],
+            "regex": "лук(?!\\s*зелен|\\s*красн)",
+            "expansions": {
+                "белый": "weiße"
+            },
+            "priority": 7
+        },
+        {
+            "prefix": "rote Gemüse_die_Zwiebel_Zwiebeln_onion",
+            "category": "veg_onion_red",
+            "keywords": [ "красный лук", "лук репчатый красный" ],
+            "regex": "лук.*красн|красн.*лук",
+            "expansions": null,
+            "priority": 12
+        },
+        {
+            "prefix": "Grün_die_grüne_Zwiebel_Zwiebeln_green_onion",
+            "category": "greens_onion",
+            "keywords": [ "зеленый лук", "лук зеленый" ],
+            "regex": "лук\\s*зелен",
+            "expansions": null,
+            "priority": 12
+        },
+        {
+            "prefix": "Gemüse_der_Knoblauch_garlic",
+            "category": "veg_garlic",
+            "keywords": [ "чеснок" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Gewürz_der_Ingwer_die_Ingwerwurzel_Ingwerwurzeln_ginger_root",
+            "category": "spice_ginger",
+            "keywords": [ "имбир" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Gemüse_das_Radieschen",
+            "category": "veg_radish",
+            "keywords": [ "редис" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Gemüse_der_grüne_Rettich_Rettiche_green_radish",
+            "category": "veg_radish_green",
+            "keywords": [ "редьк" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Gemüse_der_Winterrettich_Winterrettiche_Daikon",
+            "category": "veg_daikon",
+            "keywords": [ "дайкон" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Gemüse_der_Brokkoli_broccoli",
+            "category": "veg_broccoli",
+            "keywords": [ "брокол" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Grünkohl_cabbage_kale",
+            "category": "veg_kale",
+            "keywords": [ "кейл", "кале" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Gemüse_der_Kaviar",
+            "category": "veg_caviar",
+            "keywords": [ "икра" ],
+            "regex": "(?!треск)икра",
+            "expansions": null,
+            "priority": 8
+        },
+        {
+            "prefix": "Gemüse_der_Zucchinikaviar",
+            "category": "veg_zucchini_caviar",
+            "keywords": [ "пюре", "кабачковая икра" ],
+            "regex": "пюре(?!\\s*дет)",
+            "expansions": null,
+            "priority": 5
+        },
+        {
+            "prefix": "Grün_der_grüne_Salat_Salate",
+            "category": "greens_salad",
+            "keywords": [ "салат", "смесь", "белая дача", "корсика", "танго", "тоскана", "босфор", "вита", "поляр", "цезарь", "м.фр.", "mr green" ],
+            "regex": "(смесь|салат).*(белая дача|корсика|танго|тоскана|босфор|цезарь|романо|айсберг|фриллис|радиччио|мангольд|шпинат|с поляр|мин|м\\.фр\\.)",
+            "expansions": {
+                "корсика": "(фриссе, руккола, шпинат)",
+                "танго": "(мангольд, руккола)",
+                "тоскана": "(фрилле, романо, радиччио)",
+                "босфор": "(айсберг, кейл, шпинат, радиччио)",
+                "вита": "(шпинат, морковь, свекла, фриссе)",
+                "цезарь": "(романо, сухарики, пармезан)",
+                "поляр": "(шпинат, руккола, мангольд)",
+                "mr green": "(фриллис, романо)",
+                "м.фр.": "(шпинат, руккола, мангольд)"
+            },
+            "priority": 12
+        },
+        {
+            "prefix": "Grün_der_Spinat_Spinate_spinach",
+            "category": "greens_spinach",
+            "keywords": [ "шпинат" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Grün_Rucola",
+            "category": "greens_rucola",
+            "keywords": [ "руккол" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Grün_der_Dill_Dille_dill",
+            "category": "greens_dill",
+            "keywords": [ "укроп" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Grün_die_Petersilie_Petersilien_parsley",
+            "category": "greens_parsley",
+            "keywords": [ "петрушк" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Grün_der_Mangold",
+            "category": "greens_chard",
+            "keywords": [ "мангольд" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Früchte_der_Apfel_Äpfel_apple",
+            "category": "fruit_apple",
+            "keywords": [ "яблок" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Früchte_die_Birne_Birnen_pear",
+            "category": "fruit_pear",
+            "keywords": [ "груш" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Früchte_die_Banane_Bananen",
+            "category": "fruit_banana",
+            "keywords": [ "банан" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Früchte_die_Orange_Orangen_orange",
+            "category": "fruit_orange",
+            "keywords": [ "апельсин" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Früchte_die_Zitrone_Zitronen_lemon",
+            "category": "fruit_lemon",
+            "keywords": [ "лимон" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "ФРУКТЫ_ЛАЙМ",
+            "category": "fruit_lime",
+            "keywords": [ "лайм" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Früchte_der_Kiwi_Kiwis_kiwi",
+            "category": "fruit_kiwi",
+            "keywords": [ "киви" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Früchte_die_Avocado_Avocados_avocado",
+            "category": "fruit_avocado",
+            "keywords": [ "авокадо", "хасс", "hass" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Backpflaume",
+            "category": "fruit_plum_dried",
+            "keywords": [ "слив", "чернослив" ],
+            "regex": "чернослив|слив(?!в(а|ы))",
+            "expansions": null,
+            "priority": 8
+        },
+        {
+            "prefix": "Früchte_die_Pflaume_Pflaumen_plum",
+            "category": "fruit_plum_fresh",
+            "keywords": [ "слива" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "die_Rosine",
+            "category": "fruit_raisin",
+            "keywords": [ "изюм", "виноград сушеный" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Früchte_die_Dattel_Datteln",
+            "category": "fruit_date",
+            "keywords": [ "финик", "меджул" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Früchte_der_Feige_Feigen_fig",
+            "category": "fruit_fig",
+            "keywords": [ "инжир" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Früchte_die_Dattelpflaume_Dattelpflaumen_persimmon",
+            "category": "fruit_persimmon",
+            "keywords": [ "хурм" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "ФРУКТЫ_ФЕЙХОА",
+            "category": "fruit_feijoa",
+            "keywords": [ "фейхоа" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Früchte_die_Quitte_Quitten",
+            "category": "fruit_quince",
+            "keywords": [ "айва" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Früchte_die_Nektarine_Nektarinen_nectarine",
+            "category": "fruit_nectarine",
+            "keywords": [ "нектарин" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Früchte_die_Aprikose_Aprikosen",
+            "category": "fruit_apricot",
+            "keywords": [ "абрикос" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Beeren_die_Himbeere_Himbeeren_raspberries",
+            "category": "berry_raspberry",
+            "keywords": [ "малин" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Beeren_die_Heidelbeere_Heidelbeeren_bilberries",
+            "category": "berry_bilberry",
+            "keywords": [ "черник" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Beeren_die_Blaubeere_Blaubeeren_blueberry",
+            "category": "berry_blueberry",
+            "keywords": [ "голубик" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Beeren_die_schwarze_Johannisbeere_Johannisbeeren_blackcurrants",
+            "category": "berry_blackcurrant",
+            "keywords": [ "смородин" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Beeren_die_Moosbeere_Moosbeeren_cranberry",
+            "category": "berry_cranberry",
+            "keywords": [ "клюкв" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Beeren_der_Sanddorn_Sanddorne_sea_buckthorn",
+            "category": "berry_seabuckthorn",
+            "keywords": [ "облепих" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Grütze_weißer_Reis_rice",
+            "category": "grain_rice",
+            "keywords": [ "рис" ],
+            "regex": "рис(?!\\s*басмати)",
+            "expansions": null,
+            "priority": 8
+        },
+        {
+            "prefix": "Grütze_weißer_Reis_rice Basmati",
+            "category": "grain_rice_basmati",
+            "keywords": [ "басмати" ],
+            "regex": "рис.*басмати|басмати.*рис",
+            "expansions": null,
+            "priority": 12
+        },
+        {
+            "prefix": "Grütze_der_Buchweizen_buckwheat",
+            "category": "grain_buckwheat",
+            "keywords": [ "греч" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Grütze_der_Hafer_oat",
+            "category": "grain_oat",
+            "keywords": [ "овсян", "альтайская сказка" ],
+            "regex": "овсян(?!\\s*напит)",
+            "expansions": null,
+            "priority": 8
+        },
+        {
+            "prefix": "КРУПА_ОВЕС_ДРОБЛЕНАЯ_ХЛОПЬЯ",
+            "category": "grain_oat_flakes",
+            "keywords": [ "геркулес", "хлопья" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Grütze_die_Hirse_Hirsen_millet",
+            "category": "grain_millet",
+            "keywords": [ "пшен" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Grütze_Bulgur",
+            "category": "grain_bulgur",
+            "keywords": [ "булгур", "мистраль" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Grütze_die_Anden_Hirse_Hirsen_quinoa",
+            "category": "grain_quinoa",
+            "keywords": [ "киноа", "квinoa" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "КРУПА_ЯЧМЕНЬ_ПЕРЛОВАЯ",
+            "category": "grain_pearl_barley",
+            "keywords": [ "перлов", "увелка" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "КРУПА_ПОЛБА_ДРОБЛЕНАЯ",
+            "category": "grain_spelt",
+            "keywords": [ "полба" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "КРУПА_КУКУРУЗНАЯ_ДРОБЛЕНАЯ",
+            "category": "grain_corn",
+            "keywords": [ "кукуруз" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "КРУПА_ПШЕНИЧНАЯ_ДРОБЛЕНАЯ",
+            "category": "grain_wheat",
+            "keywords": [ "пшеничн" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Толокно",
+            "category": "grain_oat_flour",
+            "keywords": [ "толокно" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Butter",
+            "category": "fat_butter",
+            "keywords": [ "масло", "сливочн", "брест-литовск", "из талицы" ],
+            "regex": "(масло|сливочн)(?!\\s*оливк|\\s*подсолн)",
+            "expansions": null,
+            "priority": 12
+        },
+        {
+            "prefix": "Olivenöl",
+            "category": "fat_olive_oil",
+            "keywords": [ "оливков", "подсолнечн", "sitia", "colavita", "anfosso" ],
+            "regex": "(масло\\s*оливк|оливк.*масло|подсолнечн.*масло)",
+            "expansions": null,
+            "priority": 12
+        },
+        {
+            "prefix": "das_Schweinefett",
+            "category": "fat_pork",
+            "keywords": [ "сало", "шпик", "велес", "сургутский" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Grüntee",
+            "category": "beverage_tea_green",
+            "keywords": [ "зеленый чай", "базилир", "herbarus" ],
+            "regex": "зеленый\\s*чай|чай.*зелен",
+            "expansions": null,
+            "priority": 12
+        },
+        {
+            "prefix": "Schwarztee",
+            "category": "beverage_tea_black",
+            "keywords": [ "чёрный чай", "черный чай", "базилир" ],
+            "regex": "чёр?ный\\s*чай|чай.*чёр?ный",
+            "expansions": null,
+            "priority": 12
+        },
+        {
+            "prefix": "Kaffee",
+            "category": "beverage_coffee",
+            "keywords": [ "кофе", "illy", "corsetti", "carte noire" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Напиток сокосодержащий",
+            "category": "beverage_juice",
+            "keywords": [ "сок", "любимый", "pulpy", "сады придонья" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Напиток овсяный",
+            "category": "beverage_oat_drink",
+            "keywords": [ "овсяный напиток", "немолоко", "овсяша" ],
+            "regex": "овсян.*напит|напит.*овсян",
+            "expansions": null,
+            "priority": 12
+        },
+        {
+            "prefix": "ОВОЩИ_ТОМАТНАЯ_ПАСТА",
+            "category": "sauce_tomato_paste",
+            "keywords": [ "томатная паста", "аджика", "помидорка", "татарский", "амца" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "кисломолочный греческий соус ДЗАДЗИКИ",
+            "category": "sauce_tzatziki",
+            "keywords": [ "дзадзик" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "eingemachte",
+            "category": "preserved",
+            "keywords": [ "маринован", "консерв" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 5
+        },
+        {
+            "prefix": "Gewürz",
+            "category": "spices",
+            "keywords": [ "специи", "приправ" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 5
+        },
+        {
+            "prefix": "Weinessig",
+            "category": "condiment_vinegar",
+            "keywords": [ "уксус", "бальзамическ" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "ГОРЧИЦА",
+            "category": "condiment_mustard",
+            "keywords": [ "горчица", "столичная" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Соль",
+            "category": "condiment_salt",
+            "keywords": [ "соль" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "СЛАДОСТИ_ПУДИНГ",
+            "category": "dessert_pudding",
+            "keywords": [ "пудинг", "hyper high protein" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Backpflaume Püree",
+            "category": "baby_puree_plum",
+            "keywords": [ "пюре чернослив", "чернослив пюре", "фрутоняня", "гиопо" ],
+            "regex": "пюре.*чернослив|чернослив.*пюре",
+            "expansions": null,
+            "priority": 12
+        },
+        {
+            "prefix": "Fleische",
+            "category": "baby_food_meat",
+            "keywords": [ "тема", "бабушкино лукошко", "фрутоняня", "гиопо" ],
+            "regex": "(тема|бабушкино|фрутоняня|гиопо).*(пюре|фрикадельк)",
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Pilze_Champignons",
+            "category": "mushroom_champignon",
+            "keywords": [ "гриб", "шампиньон" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Kakao_cocoa",
+            "category": "cocoa",
+            "keywords": [ "какао", "dr.bak" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "КОКОС_СТРУЖКА",
+            "category": "coconut",
+            "keywords": [ "кокос" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Leber_von_Kabeljau_cod_liver",
+            "category": "fish_cod_liver",
+            "keywords": [ "печень трески", "икра трески", "nord pilgrim", "гостово" ],
+            "regex": "(печень|икра).*треск|треск.*(печень|икра)",
+            "expansions": null,
+            "priority": 15
+        },
+        {
+            "prefix": "ПР!СТ",
+            "category": "household",
+            "keywords": [ "мешок", "пакет", "пр!ст", "мусор" ],
+            "regex": "(мешки?|пакет(ы|ов)?).*(мусор|завтр)|пр!ст",
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "HOME STORY",
+            "category": "household_wipes",
+            "keywords": [ "салфетк" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "SYNERG.",
+            "category": "hygiene_toothpaste",
+            "keywords": [ "зубная паста", "биорепир", "rocs", "sensodyne" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "ДЕТ.Мыло",
+            "category": "hygiene_soap",
+            "keywords": [ "мыло", "невская косметика", "ушастый нянь" ],
+            "regex": "мыло(?!\\s*жидк)",
+            "expansions": null,
+            "priority": 8
+        },
+        {
+            "prefix": "Носки",
+            "category": "clothing_socks",
+            "keywords": [ "носок", "conte" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Лаки Миши",
+            "category": "kids_nail_polish",
+            "keywords": [ "лаки миши" ],
+            "regex": "лак(?!\\s*для\\s*волос|\\s*ногт.*полир)",
+            "expansions": null,
+            "priority": 7
+        },
+        {
+            "prefix": "Union Source",
+            "category": "stationery_pen",
+            "keywords": [ "ручка", "union source" ],
+            "regex": null,
+            "expansions": null,
+            "priority": 10
+        },
+        {
+            "prefix": "Oral-B",
+            "category": "hygiene_toothbrush",
+            "keywords": [ "щетка", "зубная щетка", "орал-би" ],
+            "regex": "зубная\\s*щетка|щетка.*зубн",
+            "expansions": null,
+            "priority": 12
+        }
+    ]
+}

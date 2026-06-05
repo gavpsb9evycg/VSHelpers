@@ -1,0 +1,87 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net10.0</TargetFramework>
+		<LangVersion>14.0</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<!-- Исключение файлов из компиляции -->
+	<ItemGroup>
+		<Compile Remove="Stocks\Aurora\**" />
+		<EmbeddedResource Remove="Stocks\Aurora\**" />
+		<None Remove="Stocks\Aurora\**" />
+
+		<!-- Исключение вложенных проектов -->
+		<Compile Remove="Stocks\CreateEmptyTimeframeFiles\**" />
+		<EmbeddedResource Remove="Stocks\CreateEmptyTimeframeFiles\**" />
+		<None Remove="Stocks\CreateEmptyTimeframeFiles\**" />
+
+		<Compile Remove="Stocks\FormatTradingReport\**" />
+		<EmbeddedResource Remove="Stocks\FormatTradingReport\**" />
+		<None Remove="Stocks\FormatTradingReport\**" />
+	</ItemGroup>
+
+	<!-- Ресурсы -->
+	<ItemGroup>
+		<None Remove="Deutsch\Transkript.txt" />
+		<None Remove="Food\ProductPrefixes.json" />
+		<Content Include="Deutsch\Transkript.txt">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<!-- NuGet пакеты (отсортированы по алфавиту внутри категорий) -->
+	<ItemGroup>
+		<!-- ========== Сборка и утилиты ========== -->
+		<PackageReference Include="Baseclass.Contrib.Nuget.Output" Version="2.4.4" />
+
+		<!-- ========== Криптография ========== -->
+		<!-- Официальный Bouncy Castle (заменяет Portable.BouncyCastle и BouncyCastle.NetCore) -->
+		<PackageReference Include="BouncyCastle.Cryptography" Version="2.6.2" />
+		<!-- Обёртка для libsodium -->
+		<PackageReference Include="Sodium.Core" Version="1.4.1" />
+		<!-- Защищённые данные (DPAPI) -->
+		<PackageReference Include="System.Security.Cryptography.ProtectedData" Version="10.0.8" />
+		<!-- Работа с XML-подписями -->
+		<PackageReference Include="System.Security.Cryptography.Xml" Version="10.0.8" />
+
+		<!-- ========== Конфигурация и зависимости .NET ========== -->
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.8" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="10.0.8" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="10.0.8" />
+
+		<!-- ========== Парсинг и работа с текстом ========== -->
+		<PackageReference Include="Microsoft.Xml.SgmlReader" Version="1.8.30" />
+
+		<!-- ========== Работа с медиа и метаданными ========== -->
+		<PackageReference Include="MetadataExtractor" Version="2.9.3" />
+		<PackageReference Include="XmpCore" Version="6.1.10.1" />
+
+		<!-- ========== Архивация ========== -->
+		<PackageReference Include="SharpZipLib" Version="1.4.2" />
+
+		<!-- ========== Базы данных ========== -->
+		<!-- SQLite: последняя стабильная версия на nuget.org -->
+		<PackageReference Include="System.Data.SQLite.Core" Version="1.0.119" />
+
+		<!-- ========== PowerShell интеграция ========== -->
+		<PackageReference Include="System.Management.Automation" Version="7.6.2" />
+	</ItemGroup>
+
+	<!-- Папки (для отображения в Solution Explorer) -->
+	<ItemGroup>
+		<Folder Include="Helper\" />
+		<Folder Include="Security\" />
+		<Folder Include="Stocks\CreateEmptyTimeframeFiles\" />
+		<Folder Include="Stocks\TradeHistory\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Content Include="Food\ProductPrefixes.json">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	</ItemGroup>
+
+</Project>
