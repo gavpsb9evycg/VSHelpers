@@ -1,0 +1,9 @@
+Früchte_der_Apfel_Äpfel_apple Яблоки Богатырь 3.51 кг Цена 490,17 ₽
+Früchte_der_Apfel_Äpfel_apple Яблоки Собрано в саду Амброзия Фермерские, 4шт. 1 шт Цена 209,49 ₽
+Früchte_der_Apfel_Äpfel_apple Яблоки Собрано в саду Спартан, 4шт 2 шт Цена 349,18 ₽
+Gemüse_das_Radieschen Редис красный, 500г 1 шт Цена 111,79 ₽
+Gemüse_der_bulgarische_rote_Pfeffer Перец Палермо сладкий 1 шт Цена 160,59 ₽
+Gemüse_die_Kartoffel_Kartoffeln_potato mini Картофель Бэби, 1кг 1 шт Цена 83,79 ₽
+Gemüse_die_Zwiebel_Zwiebeln_onion weiße Лук репчатый белый 1.793 кг Цена 187,83 ₽
+Grün_der_grüne_Salat_Salate Смесь Белая Дача Корсика из свежих листовых овощей (фриссе, руккола, шпинат), 80г 1 шт Цена 139,69 ₽
+Pilze_Champignons Шампиньоны мини Маркет, 300г 1 шт Цена 118,69 ₽
