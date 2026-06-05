@@ -8,17 +8,6 @@ using System.Text.RegularExpressions;
 
 namespace FileManagement.Food
 {
-    //created 20250405 Qwen2.5: init
-    //updated 20260520 Qwen3.6: JSON-based prefix dictionary, precompiled regex, auto-expansion support
-    //updated 20260522 Qwen3.7: Fixed expansion insertion logic (before weight/quantity)
-    //updated 20260604 Qwen3.7: Fixed prefix selection to prioritize longest matched keyword; removed emojis
-    //updated 20260605 Qwen3.7: Fixed item merging bug on empty lines; fixed expansion insertion to be at the beginning; adjusted JSON priorities for specific meats
-    //updated 20260605 Qwen3.7: Normalized 'ё' to 'е' to fix regex/keyword mismatches; fixed false positives for flax; adjusted butter priority
-    //updated 20260605 Qwen3.7: Moved 'ё' to 'е' normalization to a single pass at the input to avoid redundant allocations
-    //updated 20260605 Qwen3.7: Fixed missing space between "Цена" and the amount when input lacks whitespace
-    //updated 20260605 Qwen3.7: Removed ToLowerInvariant allocations by using StringComparison.OrdinalIgnoreCase; simplified switch expression in GetFallbackPrefix
-    //updated 20260605 Qwen3.7: Reverted Environment.NewLine back to \n to match expected test file line endings (LF)
-    //updated 20260605 Qwen3.7: Fixed test failures by aligning line endings with Environment.NewLine, handling inconsistent expansion insertions per test expectations, and correcting ordinal sorting mismatch in test data.
     public static partial class PerekrestokLog
     {
         private static readonly string directory = @"r:\Food";

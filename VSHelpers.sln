@@ -5,10 +5,6 @@ VisualStudioVersion = 18.4.11626.88
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileManagement", "FileManagement\FileManagement.csproj", "{A234041C-9A7C-44F7-9B55-D0B02F864D50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestX509Certificates", "TestX509Certificates\TestX509Certificates.csproj", "{1E6D3F7D-EC4F-48BD-BAB8-721034F0CF98}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestRAG", "TestRAG\TestRAG.csproj", "{455EB304-C658-4E65-8AF8-69CD39EE2F1F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileManagement.Tests", "FileManagement.Tests\FileManagement.Tests.csproj", "{B66E219F-ECE0-4E99-9608-AD3B1DC2D1EC}"
 EndProject
 Global
@@ -21,14 +17,6 @@ Global
 		{A234041C-9A7C-44F7-9B55-D0B02F864D50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A234041C-9A7C-44F7-9B55-D0B02F864D50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A234041C-9A7C-44F7-9B55-D0B02F864D50}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1E6D3F7D-EC4F-48BD-BAB8-721034F0CF98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1E6D3F7D-EC4F-48BD-BAB8-721034F0CF98}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1E6D3F7D-EC4F-48BD-BAB8-721034F0CF98}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1E6D3F7D-EC4F-48BD-BAB8-721034F0CF98}.Release|Any CPU.Build.0 = Release|Any CPU
-		{455EB304-C658-4E65-8AF8-69CD39EE2F1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{455EB304-C658-4E65-8AF8-69CD39EE2F1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{455EB304-C658-4E65-8AF8-69CD39EE2F1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{455EB304-C658-4E65-8AF8-69CD39EE2F1F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B66E219F-ECE0-4E99-9608-AD3B1DC2D1EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B66E219F-ECE0-4E99-9608-AD3B1DC2D1EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B66E219F-ECE0-4E99-9608-AD3B1DC2D1EC}.Release|Any CPU.ActiveCfg = Release|Any CPU

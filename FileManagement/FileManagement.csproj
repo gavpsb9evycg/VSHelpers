@@ -10,27 +10,25 @@
 
 	<!-- Исключение файлов из компиляции -->
 	<ItemGroup>
-		<Compile Remove="Stocks\Aurora\**" />
-		<EmbeddedResource Remove="Stocks\Aurora\**" />
-		<None Remove="Stocks\Aurora\**" />
+		<Compile Remove="Deutsch\**" />
+		<Compile Remove="Helper\**" />
+		<Compile Remove="Security\**" />
+		<Compile Remove="Stocks\**" />
+		<EmbeddedResource Remove="Deutsch\**" />
+		<EmbeddedResource Remove="Helper\**" />
+		<EmbeddedResource Remove="Security\**" />
+		<EmbeddedResource Remove="Stocks\**" />
+		<None Remove="Deutsch\**" />
+		<None Remove="Helper\**" />
+		<None Remove="Security\**" />
+		<None Remove="Stocks\**" />
 
 		<!-- Исключение вложенных проектов -->
-		<Compile Remove="Stocks\CreateEmptyTimeframeFiles\**" />
-		<EmbeddedResource Remove="Stocks\CreateEmptyTimeframeFiles\**" />
-		<None Remove="Stocks\CreateEmptyTimeframeFiles\**" />
-
-		<Compile Remove="Stocks\FormatTradingReport\**" />
-		<EmbeddedResource Remove="Stocks\FormatTradingReport\**" />
-		<None Remove="Stocks\FormatTradingReport\**" />
 	</ItemGroup>
 
 	<!-- Ресурсы -->
 	<ItemGroup>
-		<None Remove="Deutsch\Transkript.txt" />
 		<None Remove="Food\ProductPrefixes.json" />
-		<Content Include="Deutsch\Transkript.txt">
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-		</Content>
 	</ItemGroup>
 
 	<!-- NuGet пакеты (отсортированы по алфавиту внутри категорий) -->
@@ -72,12 +70,6 @@
 	</ItemGroup>
 
 	<!-- Папки (для отображения в Solution Explorer) -->
-	<ItemGroup>
-		<Folder Include="Helper\" />
-		<Folder Include="Security\" />
-		<Folder Include="Stocks\CreateEmptyTimeframeFiles\" />
-		<Folder Include="Stocks\TradeHistory\" />
-	</ItemGroup>
 	<ItemGroup>
 	  <Content Include="Food\ProductPrefixes.json">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
